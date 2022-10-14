@@ -1,0 +1,121 @@
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@layer components {
+    .header{
+        box-shadow: theme('boxShadow.nav-shadow');
+        height:theme('height.header-height');
+        background-color: theme('colors.white');
+        display:flex;
+
+    }
+    .input-field{
+        width: theme('width.input-width');
+        height:theme('height.input-height');
+        background-color: theme('colors.gray');
+        border-radius: theme('borderRadius.lg');
+        color: theme('colors.gray-light');
+        font-size: theme('fontSize.md');
+        font-weight: theme('fontWeight.normal');
+        font-family: 'Source Sans Pro';
+        border:1px solid rgba(196, 196, 196, 0.3);
+
+    }
+
+    .link-item{
+        font-size: theme('fontSize.md');
+        font-family: 'Source Sans Pro';
+        font-weight: theme("fontWeight.semibold");
+        color: theme('colors.black');
+
+        
+    }
+
+    .card {
+        background-color: theme('colors.white');
+        border-radius: theme('borderRadius.sm');
+        width: theme('width.card-width');
+        height: theme('height.card-height');
+        box-shadow: theme('boxShadow.card-shadow');
+      }
+  
+      .card-content{
+          height:theme('height.card-content-height');
+          padding-top: 10px;
+          padding-left: 25px;
+
+      }
+
+      .main-div{
+          /* width: theme('width.lg'); */
+          height: theme('height.row-height');
+          /* margin-top: theme('margin.md'); */
+
+
+
+      }
+ 
+
+      .row{
+        width: theme('width.lg');
+        background-color: theme('colors.white');
+        border-radius: theme('borderRadius.md');
+
+
+
+
+      }
+
+      .button{
+        width: theme('width.button-width');
+        height: theme('height.button-height');
+        margin-right: theme('margin.sm');
+        border-radius: theme('borderRadius.sm');
+        border-color: theme('colors.border-gray');
+        border-width: theme('borderWidth.1');
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+
+      }
+
+      .checkbox-header{
+          color: theme('colors.red');
+      }
+
+      .search-button{
+        background-color: theme('colors.red');
+        color: theme('colors.white');
+        width: theme('width.search');
+        height: theme('height.search');
+        border-radius: theme('borderRadius.lg');
+        font-size: theme('fontSize.md');
+        text-align:center;
+        box-shadow: theme("boxShadow.search-button-shadow");
+        position: relative;
+        right: 112px;
+
+
+
+
+
+
+
+
+      }
+
+      .checkbox {
+        width:24px;
+        height:24px;
+        border: 1.5px solid #D7D7D7;
+        
+        border-radius: 8px;
+
+      }
+ 
+}
